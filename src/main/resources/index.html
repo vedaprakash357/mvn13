@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova | Creative Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">NOVA<span>.</span></h2>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+        </div>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tagline">WELCOME TO NOVA STUDIO</p>
+        <h1>We Create <span>Digital</span> Experiences.</h1>
+        <p class="hero-description">
+            We transform creative ideas into beautiful digital
+            experiences that help businesses grow.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#services" class="btn primary-btn">Explore Services</a>
+            <a href="#contact" class="btn secondary-btn">Contact Us</a>
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <div class="circle">
+            <div class="inner-circle">N</div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services section" id="services">
+    <div class="section-heading">
+        <p>WHAT WE DO</p>
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="service-container">
+        <div class="service-card">
+            <div class="service-icon">🎨</div>
+            <h3>UI/UX Design</h3>
+            <p>Beautiful and user-friendly designs for modern digital products.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Fast, responsive and interactive websites using modern technology.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📱</div>
+            <h3>Digital Marketing</h3>
+            <p>Creative strategies to grow your brand and reach more customers.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about section" id="about">
+    <div class="about-content">
+        <p class="tagline">ABOUT OUR STUDIO</p>
+        <h2>Ideas Become Reality.</h2>
+        <p>
+            We are a creative digital studio focused on building
+            meaningful online experiences. Our team combines
+            creativity, technology and innovation to deliver
+            outstanding results.
+        </p>
+        <a href="#contact" class="btn primary-btn">Let's Talk</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact section" id="contact">
+    <div class="section-heading">
+        <p>GET IN TOUCH</p>
+        <h2>Let's Work Together</h2>
+    </div>
+
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+        <p id="formMessage" role="status"></p>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h2>NOVA<span>.</span></h2>
+    <p>Creating digital experiences that matter.</p>
+    <p>© <span id="year"></span> Nova Studio. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
